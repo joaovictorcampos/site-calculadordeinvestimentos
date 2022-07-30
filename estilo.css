@@ -94,8 +94,7 @@ p#botao{
     padding: 10px 10px 10px 10px;
 }
 
-p#respos{
-    text-align: justify;
+div#respos{
     background-color: rgb(0, 226, 0);
     border-radius: 5px;
     box-shadow: 5px 6px 15px #000000ad;
@@ -104,8 +103,7 @@ p#respos{
     
 }
 
-p#resneg{
-    text-align: justify;
+div#resneg{
     background-color: red;
     border-radius: 5px;
     box-shadow: 5px 6px 15px #000000ad;
