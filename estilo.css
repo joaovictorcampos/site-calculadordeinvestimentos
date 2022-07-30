@@ -73,6 +73,7 @@ article#ex p{
 
 article#ex p#form{
     text-align: center;
+    text-indent: 0px;
 }
 
 input{
