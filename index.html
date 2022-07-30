@@ -9,18 +9,38 @@
 </head>
 <body>
     <header>
-        <h1>Essa empresa vale investir?</h1>
+        <h1>Esta ação está cara?</h1>
+        <p>Está calculadora vai facilitar o cálculo da fórmula usada por Benjamin Graham, para encontrar o valor intrínseco de uma ação!</p>
+        
     </header>
-    <section>
-        Insira o valor da ação:<input type="number" id="VA">
-        <p>Insira o VPA:<input type="number" id="VPA"></p>
-        <p>Insira o LPA:<input type="number" id="LPA"></p>
-        <input type="button" value="gerar" onclick="gerar()">
-        <div id="respos"></div>
-        <div id="resneg"></div>
-    </section>
+    <main>
+        <aside id="AVISO">
+            <p><strong>Ateção!</strong> Este é apenas um aplicador do Método de <a href="https://www.suno.com.br/tudo-sobre/benjamin-graham/" target="_blank">B. Graham</a> para calcular o valor intrínseco de uma ação, o mesmo não dispensa os conhecimentos mais aprofundados sobre o assunto, estudos detalhados sobre as ações, entre outros meios de análise do mercado de ações. A forma como o calculador será usado, e as medidas que serão tomadas após o cálculo do valor intrínseco da ação são de responsabilidade única e exclusiva da SUA PESSOA(visitante da página)</p>
+        </aside>
+        <article id="calculador">
+            <p>Insira o valor da ação:<input type="number" id="VA"></p>
+            <p>Insira o <abbr title="Valor Patrimonial da ação">VPA</abbr>:<input type="number" id="VPA"></p>
+            <p>Insira o <abbr title="Lucro por ação">LPA</abbr>:<input type="number" id="LPA"></p>
+            <input type="button" value="gerar" onclick="gerar()" id="gerar">
+            <div id="respos"></div>
+            <div id="resneg"></div>
+        </article>
+
+        <article id="ex">
+            <h2>Para que serve o Valor Intrínseco(V.I.)?</h2>
+            <p>O Valor Intrínseco é uma métrica muito importante no momento de análise de uma ação, pois esse valor nos diz se uma ação é de fato atrativa ou não. Usando essa medida como comparativo junto do preço atual da ação é possível verificar se seu preço é de fato justo ou não, e só então fazer a compra. </p>
+
+            <h2>O que é VPA e LPA? Onde posso encontrá-los?</h2>
+            <p>VPA: "Valor patrimonial da ação", que é o patrimônio líquido de uma empresa dividido pelo número de ações que ela possui.  </p>
+            <br><p>LPA: "Lucro por ação", valor calculado dividindo o lucro líquido de uma empresa pelo número das ações que ela possui. </p>
+            <br><p>Calma, você não vai precisar ficar calculando e dividindo o número de ações pelo lucro e patrimônio líquido toda vez que quiser fazer este cálculo, basta acessar o site da <a href="https://statusinvest.com.br/" target="_blank">STATUS INVEST</a> ou outro de sua preferência e pegar todos esses valores já prontinhos para uso.</p>
+            <h2>Qual foi a fórmula utilizada para esse cálculo?</h2>
+            <p id="form">A fórmula foi: <abbr title="Valor Intrínseco">VI</abbr>= <abbr title="Raiz quadrada">√</abbr>(<abbr title="Média de lucro por ação e valor por ação, definida por Graham.">22,5</abbr> <abbr title="vezes">x</abbr> <abbr title="Lucro por ação">LPA</abbr> <abbr title="vezes">x</abbr> <abbr title="Valor patrimonial da ação">VPA</abbr>) </p>
+            <br><p>Você pode estar em dúvida quanto a esse "22,5" que apareceu de forma fantasma na nossa fórmula, porém, ele nada mais é do que uma "média" definida por B. Graham para se comprar uma ação. Para Graham o P/L(Lucro por ação) aceito não poderia estar acima de 15 vezes, e o P/VPA(Valor por ação) não poderia esar acima de 1 vez e meia (1,5), portanto foi feito a seguinte conta: P/L x P/VPA= média "(15 x 1,5 = 22,5)"</p>
+        </article>
+    </main>
     <footer>
-        <p>&copy;MERLINNzin
+        <p>&copy; 2022 João Campos. All rights reserved.
         </p>
     </footer>
    

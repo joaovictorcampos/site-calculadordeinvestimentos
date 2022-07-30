@@ -23,9 +23,9 @@ function gerar(){
         }
         if(s<= 0){
             
-            resneg.innerHTML = `O valor intrínseco é ${vi.toFixed(0)}, e a margem de segurança calculada em porcentagem é %${s.toFixed(0)}`
+            resneg.innerHTML = `O valor intrínseco é ${vi.toFixed(2)}, e a margem de segurança calculada em porcentagem é %${s.toFixed(0)}`
             
         }else{
-            respos.innerHTML = `O valor intrínseco é ${vi.toFixed(0)}, e a margem de segurança calculada em porcentagem é ${s.toFixed(0)}%`
+            respos.innerHTML = `O valor intrínseco é ${vi.toFixed(2)}, e a margem de segurança calculada em porcentagem é ${s.toFixed(0)}%`
         }
     }
