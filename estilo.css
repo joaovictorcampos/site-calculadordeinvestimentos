@@ -2,16 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@1,300&display=swap');
 
-body{
-    background-color: var(--cor4);
-    font: normal 15pt Arial;
-    
-    
-}
-
 :root{
-    --corfundo: #83a4e0;
-    --cor0: #457DE6;
+    --corfundo: #becbe4;
+    --cor0: #8d8d8d;
     --cor1: #004FE0;
     --cor2: #003DAD;
     --cor3: #1D3561;
@@ -20,6 +13,13 @@ body{
     --font-padrao: 'Poppins', sans-serif;
     --font-destaque: 'Bebas Neue', cursive;
 
+}
+
+body{
+    background-color: var(--cor0);
+    font: normal 15pt Arial;
+    
+    
 }
 
 *{
@@ -60,7 +60,7 @@ a:hover{
 header{
     text-align: center;
     color: white;
-    background-image: linear-gradient(to bottom,var(--cor4), var(--corfundo));
+    background-image: linear-gradient(to bottom, rgb(2, 2, 61), var(--cor4));
     padding-bottom: 30px;
     box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.459);
     
@@ -85,6 +85,7 @@ main{
     min-width: 200px;
     padding: 0.5px 30px 20px 30px;
     border-radius: 0px 0px 5px 5px;
+    box-shadow: -4px -3px 28px rgba(0, 0, 0, 0.692);
 }
 
 main aside{
